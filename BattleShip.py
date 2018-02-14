@@ -33,8 +33,7 @@ for turn in range(4):                              #prints "Turn" and "Turn numb
     print ("Congratulations! You sank my battleship!")
     break
   else:
-    if guess_row not in range(5) or \                                   #This condition checks whether the user repeats his/her guess
-      guess_col not in range(5):
+    if guess_row not in range(5) or guess_col not in range(5):                                   #This condition checks whether the user repeats his/her guess
       print ("Oops, that's not even in the ocean.")
     elif board[guess_row][guess_col] == "X":
       print( "You guessed that one already." )
